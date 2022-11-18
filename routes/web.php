@@ -15,3 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\PostController::class, 'home'])
     ->name('home.index');
+
+Route::get('/battle', [App\Http\Controllers\PostController::class, 'battle'])
+    ->name('battle.index');
+
+
+
+
+
+
+
+
+

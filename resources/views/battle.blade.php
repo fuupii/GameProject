@@ -8,8 +8,15 @@
 
 
 <main>
+
     <div class="countBtn">
-        <button></button>
+        <div class="back">
+            <a href="/">&laquo;</a>
+        </div>
+
+        <div class="search">
+            <button class="yellow"></button>
+        </div>
         <div>
             <ul>
                 @foreach($posts as $post)
@@ -20,10 +27,12 @@
     </div>
 
     <div class="battle">
-        <a href="{{ route('battle.index') }}">battle</a>
+        <a href="{{ route('battle.index') }}"></a>
     </div>
+
+    <?php $name = 'taro'; ?>
 </main>
 
 
-<script src="js/home.js"></script>
+<script src="js/battle.js"></script>
 </x-layout>
