@@ -19,4 +19,8 @@ Route::patch('/action', [App\Http\Controllers\PostController::class, 'update']);
 
 Route::patch('/update', [ItemController::class, 'updateItem']);
 
+Route::patch('/', [ItemController::class, 'updateItem']);
+
+
+
 

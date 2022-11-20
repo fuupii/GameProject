@@ -13,7 +13,17 @@
                 gear.classList.add('appear');
             }, 200)
         }, 200)
-    }, 1);
+    }, 50);
+
+    const modal = document.getElementById('modal');
+
+    shop.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+    });
+
+    document.getElementById('close').addEventListener('click', () => {
+        modal.classList.add('hidden');
+    });
 
 
 

@@ -8,15 +8,7 @@
 
 
 
-    // ボタンクリック処理
-    button.addEventListener('click', () => {
-        const ul = document.querySelector('ul');
-        ul.firstElementChild.remove();
-        place = place + 1;
-        const li = document.createElement('li');
-        li.textContent = place;
-        ul.appendChild(li);
-    });
+
 
     // お金セーブ
     function saveMoney()

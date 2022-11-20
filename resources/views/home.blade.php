@@ -6,6 +6,20 @@
         HOME
     </x-slot>
 
+    <section id="modal" class="hidden">
+                @foreach($posts as $post)
+                    <li id="defaultvalue">{{ $post->place }}</li>
+                @endforeach
+       <ul>
+            <div>
+                <li></li>
+                <img src="" alt="">
+            </div>
+       </ul>
+
+       <div id="close">CLOSE</div>
+    </section>
+
 
 <main>
     <div class="countBtn">
@@ -23,7 +37,7 @@
         <a href="{{ route('battle.index') }}">battle</a>
     </div>
     <div class="shop">
-        <a href="{{ route('battle.index') }}">shop</a>
+        <a>shop</a>
     </div>
     <div class="gear">
         <a href="{{ route('battle.index') }}">gear</a>

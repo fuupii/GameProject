@@ -8,15 +8,11 @@
     let encount = false;
 
     const sound = document.querySelector('.bgm');
+    sound.volume = 0.5;
     const attackSound = document.querySelector('.attack');
 
 
 
-    function NowTime()
-    {
-        let nowDate = new Date();
-        return '（' + nowDate.getHours() + ':' + nowDate.getMinutes() + '）';
-    }
 
 
 
@@ -39,6 +35,14 @@
     // 黄ボタンクリック処理
     buttonYellow.addEventListener('click', () => {
         if(!encount && !cooldown_flag) {
+
+            const walkSound = document.querySelector('.walk');
+            walkSound.currentTime = 0;
+            walkSound.play();
+            window.setTimeout(() => {
+                walkSound.pause();
+            },1500);
+
             const searchRandom = Search(getConfig());
             switch(searchRandom.val) {
                 case 10:
@@ -99,17 +103,18 @@
     function hit()
     {
         attackSound.currentTime = 0;
+        attackSound.volume = 0.2;
         attackSound.play();
         if(hp > 0) {
             hp -= myAtk;
             updateEnemyHitPoint();
             if(hp <= 0) {
-                fadeEnemy();
+                fadeEnemy('コケコッコー');
                 getMoney(400);
                 encount = false;
             }
         } else {
-            fadeEnemy();
+            fadeEnemy('コケコッコー');
             getMoney(400);
             encount = false;
         }

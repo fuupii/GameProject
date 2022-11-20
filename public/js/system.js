@@ -2,8 +2,14 @@
 
     const enemy = document.querySelector('.enemy');
     let cooldown_flag = false;
-    const fadeSound = document.querySelector('.fade')
+    const fadeSound = document.querySelector('.fade');
 
+    //ログの時間を取得
+    function NowTime()
+    {
+        let nowDate = new Date();
+        return '（' + nowDate.getHours() + ':' + nowDate.getMinutes() + '）';
+    }
 
     // 敵HPの更新
     function updateEnemyHitPoint()
@@ -18,12 +24,15 @@
     }
 
     // 敵撃破
-    function fadeEnemy()
+    function fadeEnemy(enemyName)
     {
         enemy.firstElementChild.remove();
         enemy.firstElementChild.remove();
         enemy.firstElementChild.remove();
+        fadeSound.volume = 0.3;
         fadeSound.play();
+        const text = document.querySelector('textarea');
+        text.textContent = text.textContent + `${enemyName}を撃破` + NowTime() + '\n';
 
     }
 

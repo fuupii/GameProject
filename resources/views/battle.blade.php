@@ -7,8 +7,9 @@
     </x-slot>
 
     <audio class="bgm" loop autoplay="autoplay" src="/natsuyasuminotanken.mp3">ああ</audio>
-    <audio class="attack" src="/attackDefault.mp3"></audio>
+    <audio class="attack" volume="0.3" src="/attackDefault.mp3"></audio>
     <audio class="fade" src="/fade.mp3"></audio>
+    <audio class="walk" src="/walk.mp3"></audio>
 
 
 <main>
