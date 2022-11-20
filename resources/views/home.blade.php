@@ -1,6 +1,6 @@
 <x-layout>
     <head>
-        <link rel="stylesheet" href="{{ URL('css/home.css'); }}">
+        <link rel="stylesheet" href="{{ URL('css/town.css'); }}">
     </head>
     <x-slot name="title">
         HOME
@@ -9,9 +9,9 @@
 
 <main>
     <div class="countBtn">
-        <button></button>
         <div>
-            <ul>
+            <ul class="mymoney">
+                <img src="/5365.png" alt="">
                 @foreach($posts as $post)
                     <li id="defaultvalue">{{ $post->place }}</li>
                 @endforeach
@@ -22,8 +22,14 @@
     <div class="battle">
         <a href="{{ route('battle.index') }}">battle</a>
     </div>
+    <div class="shop">
+        <a href="{{ route('battle.index') }}">shop</a>
+    </div>
+    <div class="gear">
+        <a href="{{ route('battle.index') }}">gear</a>
+    </div>
 </main>
 
-
+<script src="js/homeui.js"></script>
 <script src="js/home.js"></script>
 </x-layout>

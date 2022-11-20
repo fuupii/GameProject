@@ -1,14 +1,26 @@
+* {
+    user-select: none;
+}
 
+body {
+    background-color: grey;
+}
 
 main {
 
-    background-color: lightblue;
+
+    background-size: contain;
+    background-color: rgba(92, 93, 89, 0.2);
+    background-blend-mode: darken;
     width: 980px;
+    height: 300px;
     margin: 0 auto;
     .countBtn {
         text-align: center;
         margin-top: 50px;
     }
+    padding-bottom: 350px;
+    position: relative;
 }
 
 button {
@@ -22,8 +34,65 @@ button {
     height: 40px;
 }
 
+.blue {
+    background-color: blue;
+    height: 40px;
+}
+
 
 
 li {
     list-style: none;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    -webkit-user-drag: none;
+}
+
+.enemy {
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+    background-color: transparent;
+    margin-top: 60px;
+    li {
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+        font-family: fantasy;
+    }
+
+
+}
+
+.mymoney{
+    display: flex;
+    position: absolute;
+    bottom: 90px;
+    border-bottom: 2px solid white;
+    margin-left: 45px;
+    padding-left: 0px;
+    img {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        margin-top: 1.5px;
+    }
+    li {
+        font-size: 18px;
+        color: lightyellow;
+    }
+}
+
+textarea {
+    background-color: grey;
+    color: orange;
+    position: absolute;
+    bottom: 30px;
+    right: 175px;
+    width: 600px;
+    height: 100px;
+
 }

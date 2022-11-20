@@ -1,7 +1,23 @@
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: grey;
+}
+
 main {
-  background-color: lightblue;
+  background-size: contain;
+  background-color: rgba(92, 93, 89, 0.2);
+  background-blend-mode: darken;
   width: 980px;
+  height: 300px;
   margin: 0 auto;
+  padding-bottom: 350px;
+  position: relative;
 }
 main .countBtn {
   text-align: center;
@@ -19,6 +35,60 @@ button {
   height: 40px;
 }
 
+.blue {
+  background-color: blue;
+  height: 40px;
+}
+
 li {
   list-style: none;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  -webkit-user-drag: none;
+}
+
+.enemy {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 0;
+  background-color: transparent;
+  margin-top: 60px;
+}
+.enemy li {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  font-family: fantasy;
+}
+
+.mymoney {
+  display: flex;
+  position: absolute;
+  bottom: 90px;
+  border-bottom: 2px solid white;
+  margin-left: 45px;
+  padding-left: 0px;
+}
+.mymoney img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  margin-top: 1.5px;
+}
+.mymoney li {
+  font-size: 18px;
+  color: lightyellow;
+}
+
+textarea {
+  background-color: grey;
+  color: orange;
+  position: absolute;
+  bottom: 30px;
+  right: 175px;
+  width: 600px;
+  height: 100px;
 }/*# sourceMappingURL=home.css.map */

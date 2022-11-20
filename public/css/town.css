@@ -1,0 +1,76 @@
+main {
+  background-image: url("/a659fac2-ee2f-42eb-9b21-26cc65a8a21a.png");
+  background-size: cover;
+  position: relative;
+}
+
+button {
+  background-color: grey;
+  width: 60px;
+  height: 40px;
+}
+
+.appear {
+  transform: translateX(-2100px);
+  transition: 1s;
+}
+
+.battle {
+  position: absolute;
+  bottom: 500px;
+  right: -2000px;
+}
+.battle a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  line-height: 2;
+  display: inline-block;
+  width: 400px;
+  border-radius: 12px;
+  background-color: orange;
+  border: 1px solid pink;
+  box-shadow: 2px 2px black;
+  font-family: serif;
+  font-size: 24px;
+}
+
+.shop {
+  position: absolute;
+  right: -2000px;
+  bottom: 400px;
+}
+.shop a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  line-height: 2;
+  display: inline-block;
+  width: 400px;
+  border-radius: 12px;
+  background-color: orange;
+  border: 1px solid pink;
+  box-shadow: 2px 2px black;
+  font-family: serif;
+  font-size: 24px;
+}
+
+.gear {
+  position: absolute;
+  right: -2000px;
+  bottom: 300px;
+}
+.gear a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  line-height: 2;
+  display: inline-block;
+  width: 400px;
+  border-radius: 12px;
+  background-color: orange;
+  border: 1px solid pink;
+  box-shadow: 2px 2px black;
+  font-family: serif;
+  font-size: 24px;
+}/*# sourceMappingURL=town.css.map */

@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::patch('/action', [App\Http\Controllers\PostController::class, 'update']);
+
+Route::patch('/update', [ItemController::class, 'updateItem']);
+
+
