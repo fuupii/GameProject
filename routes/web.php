@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,8 @@ Route::get('/', [App\Http\Controllers\PostController::class, 'home'])
 
 Route::get('/battle', [App\Http\Controllers\PostController::class, 'battle'])
     ->name('battle.index');
+
+
 
 
 

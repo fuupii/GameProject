@@ -6,14 +6,22 @@
         HOME
     </x-slot>
 
+    <audio class="townBgm" src="/townBgm.mp3"></audio>
+
+
     <section id="modal" class="hidden">
                 @foreach($posts as $post)
                     <li id="defaultvalue">{{ $post->place }}</li>
                 @endforeach
        <ul>
-            <div>
-                <li></li>
-                <img src="" alt="">
+            <div class="shopflex">
+                @foreach($shops as $shop)
+                <div class="shop">
+                    <li class="name">{{ $shop->name }}</li>
+                    <img src="{{ $shop->imgUrl }}" alt="">
+                    <li>{{ $shop->cost }}</li>
+                </div>
+                @endforeach
             </div>
        </ul>
 
@@ -21,7 +29,7 @@
     </section>
 
 
-<main>
+<main class="fadeout">
     <div class="countBtn">
         <div>
             <ul class="mymoney">
@@ -34,15 +42,16 @@
     </div>
 
     <div class="battle">
-        <a href="{{ route('battle.index') }}">battle</a>
+        <a class="" href="">battle</a>
     </div>
-    <div class="shop">
+    <div class="shopbtn">
         <a>shop</a>
     </div>
     <div class="gear">
-        <a href="{{ route('battle.index') }}">gear</a>
+        <a class="" href="">gear</a>
     </div>
 </main>
+
 
 <script src="js/homeui.js"></script>
 <script src="js/home.js"></script>

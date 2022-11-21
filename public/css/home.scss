@@ -6,9 +6,14 @@ body {
     background-color: grey;
 }
 
+.fadeout {
+    opacity: 0;
+    transition: 1s;
+}
+
 main {
 
-
+    transition: 1s;
     background-size: contain;
     background-color: rgba(92, 93, 89, 0.2);
     background-blend-mode: darken;

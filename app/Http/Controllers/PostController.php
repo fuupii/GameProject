@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Shop;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -11,8 +12,10 @@ class PostController extends Controller
     public function home()
     {
         $posts = Post::latest()->get();
+        $shops = Shop::latest()->get();
         return view('home')
-            ->with(['posts' => $posts]);
+            ->with(['posts' => $posts])
+            ->with(['shops' => $shops]);
     }
 
     public function battle()

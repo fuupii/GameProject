@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="{{ URL('css/home.css'); }}">
 </head>
 <body>
-
+    <audio class="selectSe" src="/select.mp3"></audio>
 
     {{ $slot }}
 
+<script src="js/page.js"></script>
 </body>
 </html>

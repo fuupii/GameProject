@@ -12,11 +12,11 @@
     <audio class="walk" src="/walk.mp3"></audio>
 
 
-<main>
+<main class="fadeout">
 
     <div class="countBtn">
-        <div class="back">
-            <a href="/">&laquo;</a>
+        <div>
+            <a id="back" href="/">&laquo;</a>
         </div>
 
         <div class="search">
@@ -45,9 +45,10 @@
 </main>
 
 
-{{-- <div class="battle">
+<div class="battle">
     <a href="{{ route('battle.index') }}"></a>
-</div> --}}
+</div>
+
 
 <script src="/js/system.js"></script>
 <script src="/js/enemy.js"></script>

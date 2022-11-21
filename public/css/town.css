@@ -36,13 +36,13 @@ button {
   font-size: 24px;
 }
 
-.shop {
+.shopbtn {
   position: absolute;
   right: -2000px;
   bottom: 400px;
   cursor: pointer;
 }
-.shop a {
+.shopbtn a {
   text-decoration: none;
   color: black;
   text-align: center;
@@ -105,4 +105,25 @@ section {
 
 .hidden {
   display: none;
+}
+
+section .shopflex {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+section .shopflex .shop {
+  margin-right: 25px;
+}
+section .shopflex .shop .name {
+  position: absolute;
+  top: 100px;
+  margin-left: 30px;
+}
+section .shopflex .shop img {
+  margin-top: 100px;
+}
+section .shopflex .shop img + li {
+  margin-left: 35px;
+  margin-top: 10px;
 }/*# sourceMappingURL=town.css.map */
